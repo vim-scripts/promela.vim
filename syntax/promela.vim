@@ -1,11 +1,15 @@
 " Vim syntax file
 " Language:	Promela
 " Maintainer:	Pieter Loubser <ploubser@cs.sun.ac.za>
-" Last Change:	15 October 2003
+" Last Change:	04 September 2003
 " Filenames:	*.prom, *.prm, *.promela
-" URL:		http://www.cs.sun.ac.za/~ploubser/promela-vim.tgz.
+" URL:		http://www.cs.sun.ac.za/~ploubser/
 " Comments:	Promela is a language for describing
 "		protocol validation models in SPIN
+
+
+" Version 0.2 Changes:
+" #define multi-line highlighting is now fixed, to be one color.
 
 
 " Clear current syntax from system
@@ -62,7 +66,7 @@ syn keyword	promConstant	true false TRUE FALSE
 
 
 " Define derivitive (very C-like)
-syn region	promDefine	start="^\s*#\s*\(define\)\>" skip="\\$" end="$" end="//"me=s-1 contains=ALLBUT
+syn region	promDefine	start="^\s*#\s*\(define\)\>" skip="\\$" end="$" end="//"me=s-1
 
 
 " Define the default highlighting.
