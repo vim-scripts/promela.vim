@@ -1,0 +1,32 @@
+
+To install the syntax highlighting for Promela, 
+used with SPIN, for the Vim editor.
+
+
+Step 1:
+
+Copy the file promela.vim to the Vim syntax directory.
+This directory is usually  ~/.vim/syntax/
+If this directory do not exists, please create it.
+
+
+Step 2:
+
+Now test to see if you already have a ~/.vim/filetype.vim
+file. If not, just move the file filetype.vim to that location.
+Otherwise copy and paste the necessary part to your
+~/.vim/filetype.vim file.
+
+
+Finished:
+
+Now by opening any *.prom or *.prm file, Vim will automatically
+open it with the Promela syntax highlighting activated.
+
+
+Maintainer:
+
+Pieter Loubser
+ploubser@cs.sun.ac.za
+
+
