@@ -10,6 +10,9 @@
 
 " Version 0.2 Changes:
 " #define multi-line highlighting is now fixed, to be one color.
+" Version 0.3 Changes:
+" Other C-like comments '//' highlighting added
+
 
 
 " Clear current syntax from system
@@ -59,6 +62,7 @@ syn region	promString	start=+"+ skip=+\\"+ end=+"+ contains=promFormat
 syn region	promComment	start="/\*" end="\*/" contains=promTodo
 syn match	promCommentError	"\*/"
 syn sync 	ccomment promComment 	minlines=30
+syn region	promCommentL	start="//" skip="\\$" end="$" keepend contains=promTodo
 
 
 " Initialize useful constants
